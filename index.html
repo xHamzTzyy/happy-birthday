@@ -48,8 +48,8 @@
         }
 
         .birthday-title {
-            font-size: 3.5rem;
-            font-weight: 300;
+            font-size: 1px;
+            font-weight: bold;
             color: var(--primary-color);
             margin-bottom: 10px;
             opacity: 0;
@@ -313,9 +313,10 @@
         }
 
         .message {
-            padding: 60px 0;
+            padding: 10px;
+            padding-top: 1rem;
             text-align: center;
-            background: rgba(255, 255, 255, 0.7);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.7), #f0ced485);
             border-radius: 20px;
             margin: 40px 0;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
@@ -325,6 +326,7 @@
             font-size: 2.5rem;
             color: var(--primary-color);
             margin-bottom: 30px;
+            margin-top: 30px;
             opacity: 0;
             transform: translateY(30px);
             animation: fadeInUp 1s ease forwards 4.3s;
@@ -335,6 +337,8 @@
             line-height: 1.8;
             max-width: 800px;
             margin: 0 auto 40px;
+            padding-right: 10px;
+            padding-left: 10px;
             opacity: 0;
             transform: translateY(30px);
             animation: fadeInUp 1s ease forwards 4.6s;
@@ -345,6 +349,7 @@
             font-style: italic;
             color: var(--primary-color);
             opacity: 0;
+            margin-bottom: 25px;
             transform: translateY(30px);
             animation: fadeInUp 1s ease forwards 4.9s;
         }
@@ -428,6 +433,7 @@
 
         .music-text {
             font-size: 0.9rem;
+            font-weight: bold;
             color: var(--text-color);
         }
 
@@ -528,7 +534,7 @@
         <button class="music-btn" id="playBtn">
             <i class="fas fa-play"></i>
         </button>
-        <span class="music-text">Putar Musik</span>
+        <span class="music-text">Play music</span>
         <audio id="birthdayMusic" loop>
             <source src="https://files.catbox.moe/3h3y3t.mp3" type="audio/mpeg">
         </audio>
@@ -564,7 +570,7 @@
             </div>
         </section>
 
-<section class="wishes">
+
             <h2 class="wishes-title">Harapan untuk Tasya</h2>
             <div class="wishes-grid">
                 <div class="wish-card">
@@ -601,34 +607,6 @@
                     </p>
                 </div>
             </div>
-        </section>
-
-        <section class="gallery">
-            <h2 class="gallery-title">Album</h2>
-            <div class="photo-grid">
-                <div class="photo-frame">
-                    <div class="photo-placeholder">
-                        <img src="foto.jpg" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="photo-frame">
-                    <div class="photo-placeholder">
-                        <img src="foto.jpg" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="photo-frame">
-                    <div class="photo-placeholder">
-                        <img src="foto.jpg" alt="" srcset="">
-                    </div>
-                </div>
-                <div class="photo-frame">
-                    <div class="photo-placeholder">
-                        <img src="foto.jpg" alt="" srcset="">
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="message">
             <h2 class="message-title">Pesan untuk Tasya</h2>
             <p class="message-text">
@@ -711,5 +689,5 @@
             setInterval(createSmoke, 2000);
         });
     </script>
-</body>
 </html>
+</body>
